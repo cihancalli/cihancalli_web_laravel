@@ -24,7 +24,7 @@ class JwtVerify
         $token = isset($headers[1])? $headers[1]:false;
 
         if (!$token || !$bearer){
-            return response()->json(['status'=>0, 'msg'=>'Yetkisiz Erisim'],401);
+            return response()->json(['status'=>0, 'msg'=>'Unauthorized Access'],401);
         }
 
         try {
@@ -33,9 +33,9 @@ class JwtVerify
             return $next($request);
 
         }catch (ExpiredException $e){
-            return response()->json(['status'=>0, 'msg'=>'ExpiredException Token Süresi Doldu'],401);
+            return response()->json(['status'=>0, 'msg'=>'ExpiredException Token Expired'],401);
         }catch (Exception $e){
-            return response()->json(['status'=>0, 'msg'=>'Exception Yetkisiz Erisim'],401);
+            return response()->json(['status'=>0, 'msg'=>'Exception Unauthorized Access'],401);
         }
     }
 }

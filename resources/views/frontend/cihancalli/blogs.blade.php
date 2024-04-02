@@ -1,14 +1,13 @@
 @php use Carbon\Carbon; use Illuminate\Support\Str; @endphp
 @extends('frontend.cihancalli.layouts.master')
-@section('frontendTitle','My Blogs')
-@section('writer','Cihan ÇALLI')
-@section('thumbnail',route('homepage').'/'.'uploads/placeholder-800x540.jpg')
-@section('writerProfile',route('homepage').'/cihancalli/dist/assets/img/illustrations/profiles/profile-5.png')
-@section('frontendContent')
+@section('cihancalliTitle','My Blogs')
+@section('cihancalliWriter','Cihan ÇALLI')
+@section('cihancalliProfile','https://zerdasoftware.com/zerdasoftware/dist/assets/img/illustrations/profiles/profile-5.png')
+@section('cihancalliContent')
 
     <!-- Page Header-->
     <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-60"
-            style="background-image: url({{route('homepage').'/'.'uploads/PTRzqc_h1r4-1600x900.jpeg'}})">
+            style="background-image: url('https://zerdasoftware.com/uploads/PTRzqc_h1r4-1600x900.jpeg')">
         <div class="page-header-ui-content position-relative">
             <div class="container px-5 text-center">
                 <div class="row gx-5 justify-content-center">
@@ -49,11 +48,11 @@
                                 </div>
                                 <hr/>
                                 <div class="post-preview-meta">
-                                    <img class="post-preview-meta-img" src="@yield('writerProfile','')" alt=""/>
+                                    <img class="post-preview-meta-img" src="@yield('cihancalliProfile','')" alt=""/>
                                     <div class="post-preview-meta-details">
 
 
-                                        <div class="post-preview-meta-details-name">@yield('writer','Admin')</div>
+                                        <div class="post-preview-meta-details-name">@yield('cihancalliWriter','Admin')</div>
                                         <div class="col post-preview-meta-details-date">
                                             <span class="badge bg-success text-white"><i
                                                     class="fa-regular fa-clock"></i> {{Carbon::parse($posts[0]->created_at)->format('d.m.Y')}}</span>
@@ -87,10 +86,10 @@
                                     </div>
                                     <div class="card-footer">
                                         <div class="post-preview-meta">
-                                            <img class="post-preview-meta-img" src="@yield('writerProfile','')" alt=""/>
+                                            <img class="post-preview-meta-img" src="@yield('cihancalliProfile','')" alt=""/>
                                             <div class="post-preview-meta-details">
                                                 <div
-                                                    class="post-preview-meta-details-name">@yield('writer','Admin')</div>
+                                                    class="post-preview-meta-details-name">@yield('cihancalliWriter','Admin')</div>
                                                 <div class="col post-preview-meta-details-date">
                                                 <span class="badge bg-success text-white"><i
                                                         class="fa-regular fa-clock"></i> {{Carbon::parse($post->created_at)->format('d.m.Y')}}</span>
@@ -111,14 +110,7 @@
             {{$posts->links('vendor.pagination.custom')}}
         </div>
 
-        <!-- Page footer-->
-        <div class="svg-border-rounded text-dark">
-            <!-- Rounded SVG Border-->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                 fill="currentColor">
-                <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-            </svg>
-        </div>
+
     </section>
 
 @endsection

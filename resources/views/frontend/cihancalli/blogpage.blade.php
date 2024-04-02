@@ -1,11 +1,11 @@
 @extends('frontend.cihancalli.layouts.master')
-@section('frontendTitle',$post->post_title)
+@section('cihancalliTitle',$post->post_title)
 @section('writer','Cihan ÇALLI')
-@section('writerProfile',route('homepage').'/cihancalli/dist/assets/img/illustrations/profiles/profile-5.png')
-@section('frontendContent')
+@section('cihancalliProfile','https://zerdasoftware.com/zerdasoftware/dist/assets/img/illustrations/profiles/profile-5.png')
+@section('cihancalliContent')
     <!-- Page Header-->
     <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-60"
-            style="background-image: url({{route('homepage').'/'.'uploads/PTRzqc_h1r4-1600x900.jpeg'}})">
+            style="background-image: url('https://zerdasoftware.com/uploads/PTRzqc_h1r4-1600x900.jpeg')">
         <div class="page-header-ui-content position-relative">
             <div class="container px-5 text-center">
                 <div class="row gx-5 justify-content-center">
@@ -35,7 +35,7 @@
                         <p class="lead">{{$post->post_summary}}</p>
                         <div class="d-flex align-items-center justify-content-between mb-5">
                             <div class="single-post-meta me-4">
-                                <img class="single-post-meta-img" src="@yield('writerProfile','')"/>
+                                <img class="single-post-meta-img" src="@yield('cihancalliProfile','')"/>
                                 <div class="single-post-meta-details">
                                     <div class="single-post-meta-details-name">@yield('writer','Admin')</div>
                                     <div class="col post-preview-meta-details-date">

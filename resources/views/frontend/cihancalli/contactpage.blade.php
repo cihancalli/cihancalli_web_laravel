@@ -1,8 +1,8 @@
 @extends('frontend.cihancalli.layouts.master')
 @section('frontendNavbar','navbar navbar-marketing navbar-expand-lg bg-transparent navbar-dark fixed-top')
 @section('navbarTitle','text-white')
-@section('frontendTitle','Contact')
-@section('frontendContent')
+@section('cihancalliTitle','Contact Me')
+@section('cihancalliContent')
     <!-- Page Header-->
     <header class="page-header-ui page-header-ui-dark bg-gradient-primary-to-secondary">
         <div class="page-header-ui-content pt-10">

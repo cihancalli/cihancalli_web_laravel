@@ -1,8 +1,8 @@
 @extends('frontend.cihancalli.layouts.master')
-@section('frontendTitle',$page->post_title)
+@section('cihancalliTitle',$page->post_title)
 @section('writer','Cihan ÇALLI')
 @section('writerProfile',route('homepage').'/cihancalli/dist/assets/img/illustrations/profiles/profile-5.png')
-@section('frontendContent')
+@section('cihancalliContent')
     <!-- Page Header-->
     <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-60"
             style="background-image: url({{route('homepage').'page.blade.php/'.'uploads/PTRzqc_h1r4-1600x900.jpeg'}})">

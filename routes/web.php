@@ -90,13 +90,13 @@ Route::prefix('admin')->name('admin.')->middleware('isBackend')->group(function 
     Route::get('/role/{id}/undelete', 'App\Http\Controllers\Backend\RoleController@undelete')->name('role.undelete');
     Route::get('/role/trashed', 'App\Http\Controllers\Backend\RoleController@trashed')->name('role.trashed');
     Route::resource('roles','App\Http\Controllers\Backend\RoleController');
-    Route::resource('roles','App\Http\Controllers\Backend\RoleController');
 
     Route::get('logout', 'App\Http\Controllers\Backend\Authentication@logout')->name('logout');
 });
 
 
 
+Route::get('sitemap.xml', 'App\Http\Controllers\SitemapController@index');
 
 
 
@@ -117,10 +117,12 @@ Route::get('/hakkimizda', 'App\Http\Controllers\Frontend\Homepage@aboutpage')->n
 Route::get('/Privacy Policy', 'App\Http\Controllers\Frontend\Homepage@termspage')->name('terms');
 Route::get('/gizlilik-politikası', 'App\Http\Controllers\Frontend\Homepage@termspage')->name('terms');
 
-Route::get('/contact', 'App\Http\Controllers\Frontend\Homepage@contactpage')->name('contact');
+
 Route::get('/iletisim', 'App\Http\Controllers\Frontend\Homepage@contactpage')->name('contact');
-Route::post('/contact', 'App\Http\Controllers\Frontend\Homepage@contactpagepost')->name('contact.post');
+Route::get('/contact', 'App\Http\Controllers\Frontend\Homepage@contactpage')->name('contact');
+
 Route::post('/iletisim', 'App\Http\Controllers\Frontend\Homepage@contactpagepost')->name('contact.post');
+Route::post('/contact', 'App\Http\Controllers\Frontend\Homepage@contactpagepost')->name('contact.post');
 
 Route::get('/blog', 'App\Http\Controllers\Frontend\Blogpage@index')->name('blogpage');
 Route::get('/blog/{cSlug}', 'App\Http\Controllers\Frontend\Blogpage@category')->name('category');

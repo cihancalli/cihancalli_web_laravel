@@ -20,10 +20,10 @@ class Homepage extends Controller
 {
     public function __construct()
     {
-        view()->share('pages', Page::orderBy('order', 'ASC')->get());
+        //view()->share('pages', Page::orderBy('order', 'ASC')->get());
     }
 
-    function web(): string
+    function theme(): string
     {
         $cihan = 'cihancalli';
         $zerda = 'zerdasoftware';
@@ -33,9 +33,9 @@ class Homepage extends Controller
 
     public function index()
     {
-        $data['posts'] = Post::orderBy('created_at', 'desc')->where('published', true)->paginate(3);
-        $data['posts']->withPAth(url('/blog/sayfalar/'));
-        return view('frontend.'.$this->web().'.homepage', $data);
+        //$data['posts'] = Post::orderBy('created_at', 'desc')->where('published', true)->paginate(3);
+        //$data['posts']->withPAth(url('/blog/sayfalar/'));
+        return view('frontend.'.$this->theme().'.homepage');
     }
 
 
@@ -46,24 +46,24 @@ class Homepage extends Controller
         $page = Page::wherePageSlug($slug)->first() ?? abort(403, 'Böylebir sayfa bulunamadı...');
         if ($page->published == 1) {
             $data['page'] = $page;
-            return view('frontend.'.$this->web().'.page', $data);
+            return view('frontend.'.$this->theme().'.page', $data);
         }
 
     }
 
     public function aboutpage()
     {
-        return view('frontend.'.$this->web().'.aboutpage');
+        return view('frontend.'.$this->theme().'.aboutpage');
     }
 
     public function termspage()
     {
-        return view('frontend.'.$this->web().'.termspage');
+        return view('frontend.'.$this->theme().'.termspage');
     }
 
     public function contactpage()
     {
-        return view('frontend.'.$this->web().'.contactpage');
+        return view('frontend.'.$this->theme().'.contactpage');
     }
 
     public function contactpagepost(Request $request)

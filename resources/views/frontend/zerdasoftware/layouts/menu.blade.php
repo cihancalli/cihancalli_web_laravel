@@ -8,11 +8,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-lg-5">
                 <li class="nav-item"><a class="nav-link" href="{{route('homepage')}}">Home</a></li>
-                <!--
+
                 <li class="nav-item dropdown dropdown-xl no-caret">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button"
                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Landings
+                        Our Company
                         <i class="fas fa-chevron-right dropdown-arrow"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end animated--fade-in-up me-lg-n25 me-xl-n15"
@@ -20,60 +20,63 @@
                         <div class="row g-0">
                             <div
                                 class="col-lg-5 p-lg-3 bg-img-cover overlay overlay-primary overlay-70 d-none d-lg-block"
-                                style="background-image: url('{{route('homepage')}}/front/dist/assets/img/backgrounds/bg-dropdown-xl.jpg')">
+                                style="background-image: url('{{route('homepage')}}/zerdasoftware/dist/assets/img/backgrounds/bg-dropdown-xl.jpg')">
                                 <div class="d-flex h-100 w-100 align-items-center justify-content-center">
                                     <div class="text-white text-center z-1">
-                                        <div class="mb-3">Multipurpose landing pages for a variety of projects.</div>
+                                        <div class="mb-3">Please contact us for further information. We
+                                            would be happy to assist you.
+                                        </div>
                                         <a class="btn btn-white btn-sm text-primary fw-500"
-                                           href="{{route('homepage')}}">View All</a>
+                                           href="{{route('contact')}}">Contact Us</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-7 p-lg-5">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <h6 class="dropdown-header text-primary">Applications</h6>
+                                        <h6 class="dropdown-header text-primary">Software</h6>
 
                                         <a class="dropdown-item" href="{{route('homepage')}}">Mobile App</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Web App</a>
                                         <a class="dropdown-item" href="{{route('homepage')}}">Desktop App</a>
 
                                         <div class="dropdown-divider border-0"></div>
                                         <h6 class="dropdown-header text-primary">Business</h6>
 
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Multipurpose</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Agency</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Press</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Directory</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Rental</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Real Estate</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Classifieds</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Digital Transformation <br>Consulting</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">SEO</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Order & Reservation <br>Management</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Database Management</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Advertising Management</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">QR Code</a>
 
                                         <div class="dropdown-divider border-0"></div>
 
-                                        <h6 class="dropdown-header text-primary">Lead Generation</h6>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Lead Capture</a>
+                                        <h6 class="dropdown-header text-primary">Social</h6>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Social Media Management</a>
 
                                         <div class="dropdown-divider border-0 d-lg-none"></div>
                                     </div>
                                     <div class="col-lg-6">
 
-                                        <h6 class="dropdown-header text-primary">Personal</h6>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Resume</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Portfolio</a>
+                                        <h6 class="dropdown-header text-primary">Corporate Identity</h6>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Logo Design</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Business Card design</a>
 
                                         <div class="dropdown-divider border-0"></div>
-                                        <h6 class="dropdown-header text-primary">Header Styles</h6>
+                                        <h6 class="dropdown-header text-primary">E-Commerce</h6>
 
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Basic</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Basic (Signup)</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Graphic</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Graphic (Signup)</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Web Site</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Content Creation</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Content Upload</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Amazon Consulting</a>
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Trendyol Consulting</a>
                                         <a class="dropdown-item" href="{{route('homepage')}}">
-                                            Video Header
-                                            <span class="badge bg-primary-soft text-primary ms-1">New!</span>
+                                            Software Integration
+                                            <span class="badge bg-primary-soft text-primary ms-1">+</span>
                                         </a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Inner Page</a>
-                                        <a class="dropdown-item" href="{{route('homepage')}}">Nav Only</a>
+
+                                        <a class="dropdown-item" href="{{route('homepage')}}">Photo Shooting & Editing</a>
 
                                     </div>
                                 </div>
@@ -81,6 +84,7 @@
                         </div>
                     </div>
                 </li>
+                <!--
                 <li class="nav-item dropdown dropdown-xl no-caret">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button"
                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -174,16 +178,15 @@
                             </div>
                         </a>
                     </div>
-                </li>
+                </li>,
                 -->
 
             </ul>
-            <!--
-           <a class="btn fw-500 ms-lg-4 btn-primary" href="https://shop.startbootstrap.com/sb-ui-kit-pro">
-               Buy Now
-               <i class="ms-2" data-feather="arrow-right"></i>
-           </a>
-           -->
+
+            <a class="btn fw-500 ms-lg-4 btn-success" href="https://wa.me/+905396017638" target="_blank">
+                WhatsApp
+            </a>
+
         </div>
     </div>
 </nav>

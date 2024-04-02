@@ -1,10 +1,10 @@
 @php use Carbon\Carbon; use Illuminate\Support\Str; @endphp
 @extends('frontend.cihancalli.layouts.master')
-@section('frontendTitle',$category->category_name)
+@section('cihancalliTitle',$category->category_name)
 @section('writer','Cihan ÇALLI')
 @section('thumbnail',route('homepage').'/'.'uploads/placeholder-800x540.jpg')
 @section('writerProfile',route('homepage').'/cihancalli/dist/assets/img/illustrations/profiles/profile-5.png')
-@section('frontendContent')
+@section('cihancalliContent')
 
     <!-- Page Header-->
     <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-60"

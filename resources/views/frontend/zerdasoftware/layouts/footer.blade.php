@@ -5,8 +5,14 @@
         <div class="container px-5">
             <div class="row gx-5">
                 <div class="col-lg-3">
-                    <div class="footer-brand">@yield('companyTitle','Zerda Software')</div>
-                    <div class="mb-3">Design made easy</div>
+                    <div class="footer-brand">@yield('zerdasoftwareTitle','Zerda Software')</div>
+                    <div class="mb-3">
+                        <a href="https://goo.gl/maps/6sGeFkdWPtqpsKpS9" target="_blank">İstanbul/Turkey</a>
+                        <br>
+                        <a href="https://wa.me/+905396017638" target="_blank">+90 539 601 76 38</a>
+                        <br>
+                        <a href="mailto:info@zerdasoftware.com" target="_blank">info@zerdasoftware.com</a>
+                    </div>
                     <div class="icon-list-social mb-5">
                         <a class="icon-list-social-link" target="_blank"
                            href="https://www.instagram.com/zerdasoftware/"><i class="fab fa-instagram"></i></a>
@@ -20,36 +26,28 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="row gx-5">
-                        <!--
+
                         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                             <div class="text-uppercase-expanded text-xs mb-4">Product</div>
                             <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><a href="#!">Landing</a></li>
-                                <li class="mb-2"><a href="#!">Pages</a></li>
-                                <li class="mb-2"><a href="#!">Sections</a></li>
-                                <li class="mb-2"><a href="#!">Documentation</a></li>
-                                <li><a href="#!">Changelog</a></li>
+                                <li class="mb-2"><a href="#!">Order & Reservation Management</a></li>
+                                <li class="mb-2"><a href="#!">QR Menu</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                            <div class="text-uppercase-expanded text-xs mb-4">Technical</div>
+                            <div class="text-uppercase-expanded text-xs mb-4">Start-Up</div>
                             <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><a href="#!">Documentation</a></li>
-                                <li class="mb-2"><a href="#!">Changelog</a></li>
-                                <li class="mb-2"><a href="#!">Theme Customizer</a></li>
-                                <li><a href="#!">UI Kit</a></li>
+                                <li class="mb-2"><a href="#!">Poster Sepeti</a></li>
+                                <li class="mb-2"><a href="#!">Ara Getirsin</a></li>
+                                <li class="mb-2"><a href="#!">We Are Yona</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                            <div class="text-uppercase-expanded text-xs mb-4">Includes</div>
+                            <div class="text-uppercase-expanded text-xs mb-4">Services</div>
                             <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><a href="#!">Utilities</a></li>
-                                <li class="mb-2"><a href="#!">Components</a></li>
-                                <li class="mb-2"><a href="#!">Layouts</a></li>
-                                <li class="mb-2"><a href="#!">Code Samples</a></li>
-                                <li class="mb-2"><a href="#!">Products</a></li>
-                                <li class="mb-2"><a href="#!">Affiliates</a></li>
-                                <li><a href="#!">Updates</a></li>
+                                <li class="mb-2"><a href="#!">Website Design and Development</a></li>
+                                <li class="mb-2"><a href="#!">Social Media Management</a></li>
+                                <li class="mb-2"><a href="#!">Digital Transformation Consulting</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6">
@@ -57,10 +55,10 @@
                             <ul class="list-unstyled mb-0">
                                 <li class="mb-2"><a href="#!">Privacy Policy</a></li>
                                 <li class="mb-2"><a href="#!">Terms and Conditions</a></li>
-                                <li><a href="#!">License</a></li>
+                                <li><a href="{{route("contact")}}">Contact Us</a></li>
                             </ul>
                         </div>
-                        -->
+
                     </div>
                 </div>
             </div>
@@ -69,11 +67,11 @@
                 <div class="col-md-6 small">Copyright &copy; <a href="https://zerdasoftware.com/" target="_blank">Zerda
                         Software</a> {{ \Carbon\Carbon::now()->format('d M Y') }}</div>
                 <div class="col-md-6 text-md-end small">
-                    <!--
+
                     <a href="#!">Privacy Policy</a>
                     &middot;
                     <a href="#!">Terms &amp; Conditions</a>
-                    -->
+
                 </div>
             </div>
         </div>

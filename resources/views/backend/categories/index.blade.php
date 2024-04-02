@@ -40,8 +40,8 @@
                                 title="{{$category->category_name}}">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        {{$category->postPublishedCount()}}/{{$category->postCount()}} <i
-                                            class="fa fa-share-alt"> </i>
+                                        {{$category->postPublishedCount()}}/{{$category->postCount()}}
+                                        <i class="fa fa-share-alt"> </i>
                                     </div>
                                     <div class="col">
                                         {{$category->postTrashedCount()}} <i class="fa fa-trash"> </i>

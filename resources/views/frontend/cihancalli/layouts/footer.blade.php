@@ -1,79 +1,77 @@
 </main>
 </div>
-
 <div id="layoutDefault_footer">
-    <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+    <footer class="footer pt-10 pb-5 mt-auto bg-black footer-dark">
         <div class="container px-5">
             <div class="row gx-5">
                 <div class="col-lg-3">
-                    <div class="footer-brand">Zerda Software</div>
-                    <div class="mb-3">The Smartest for All</div>
+                    <div class="footer-brand">@yield('companyTitle','Zerda Software')</div>
+                    <div class="mb-3">
+                        <a href="https://goo.gl/maps/6sGeFkdWPtqpsKpS9" target="_blank">İstanbul/Turkey</a>
+                        <br>
+                        <a href="https://wa.me/+905396017638" target="_blank">+90 539 601 76 38</a>
+                        <br>
+                        <a href="mailto:info@zerdasoftware.com" target="_blank">info@zerdasoftware.com</a>
+                    </div>
                     <div class="icon-list-social mb-5">
-                        <a class="icon-list-social-link" target="_blank" href="https://www.instagram.com/cihancalli"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="icon-list-social-link" target="_blank" href="https://www.facebook.com/cihancalli"><i
-                                class="fab fa-facebook"></i></a>
-                        <a class="icon-list-social-link" target="_blank" href="https://www.github.com/cihancalli"><i
+                        <a class="icon-list-social-link" target="_blank"
+                           href="https://www.instagram.com/zerdasoftware/"><i class="fab fa-instagram"></i></a>
+                        <a class="icon-list-social-link" target="_blank"
+                           href="https://www.facebook.com/zerdasoftware"><i class="fab fa-facebook"></i></a>
+                        <a class="icon-list-social-link" target="_blank" href="https://github.com/zerdasoftware"><i
                                 class="fab fa-github"></i></a>
-                        <a class="icon-list-social-link" target="_blank" href="https://www.twitter.com/cihancalli"><i
+                        <a class="icon-list-social-link" target="_blank" href="https://twitter.com/zerdasoftware"><i
                                 class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <div class="row gx-5">
+
                         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                             <div class="text-uppercase-expanded text-xs mb-4">Product</div>
                             <ul class="list-unstyled mb-0">
-                                <!--
-                                <li class="mb-2"><a href="{{route('homepage')}}">Landing</a></li>
-                                <li class="mb-2"><a href="{{route('homepage')}}">Pages</a></li>
-                                <li class="mb-2"><a href="{{route('homepage')}}">Sections</a></li>
-                                <li class="mb-2"><a href="{{route('homepage')}}">Documentation</a></li>
-                                <li><a href="#!">Changelog</a></li>
-                                -->
+                                <li class="mb-2"><a href="#!">Order & Reservation Management</a></li>
+                                <li class="mb-2"><a href="#!">QR Menu</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                            <div class="text-uppercase-expanded text-xs mb-4">Technical</div>
+                            <div class="text-uppercase-expanded text-xs mb-4">Start-Up</div>
                             <ul class="list-unstyled mb-0">
-                                <!--
-                                <li class="mb-2"><a href="{{route('homepage')}}">Documentation</a></li>
-                                <li class="mb-2"><a href="{{route('homepage')}}">Changelog</a></li>
-                                <li class="mb-2"><a href="{{route('homepage')}}">Theme Customizer</a></li>
-                                <li><a href="#!">UI Kit</a></li>
-                                -->
+                                <li class="mb-2"><a href="#!">Poster Sepeti</a></li>
+                                <li class="mb-2"><a href="#!">Ara Getirsin</a></li>
+                                <li class="mb-2"><a href="#!">We Are Yona</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                            <div class="text-uppercase-expanded text-xs mb-4">Contents</div>
+                            <div class="text-uppercase-expanded text-xs mb-4">Services</div>
                             <ul class="list-unstyled mb-0">
-                                <!--
-                                <li class="mb-2"><a href="{{route('homepage')}}">Utilities</a></li>
-                                <li class="mb-2"><a href="{{route('homepage')}}">Components</a></li>
-                                <li class="mb-2"><a href="{{route('homepage')}}">Layouts</a></li>
-                                <li class="mb-2"><a href="{{route('homepage')}}">Code Samples</a></li>
-                                <li class="mb-2"><a href="{{route('homepage')}}">Products</a></li>
-                                <li class="mb-2"><a href="{{route('homepage')}}">Affiliates</a></li>
-                                <li><a href="#!">Updates</a></li>
-                                -->
+                                <li class="mb-2"><a href="#!">Website Design and Development</a></li>
+                                <li class="mb-2"><a href="#!">Social Media Management</a></li>
+                                <li class="mb-2"><a href="#!">Digital Transformation Consulting</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="text-uppercase-expanded text-xs mb-4">Legal</div>
                             <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><a href="{{route('terms')}}">Terms & Privacy</a></li>
+                                <li class="mb-2"><a href="#!">Privacy Policy</a></li>
+                                <li class="mb-2"><a href="#!">Terms and Conditions</a></li>
+                                <li><a href="{{route("contact")}}">Contact Us</a></li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>
             <hr class="my-5"/>
             <div class="row gx-5 align-items-center">
-                <div class="col-md-6 small">Copyright &copy; <a href="https://www.zerdasoftware.com/"
-                                                                style="text-decoration:none" target="_blank">Zerda
-                        Software</a></div>
+                <div class="col-md-6 small">Copyright &copy; <a href="https://zerdasoftware.com/" target="_blank">Zerda
+                        Software</a> {{ \Carbon\Carbon::now()->format('d M Y') }}</div>
                 <div class="col-md-6 text-md-end small">
-                    <a href="{{route('terms')}}">Terms & Privacy</a>
+
+                    <a href="#!">Privacy Policy</a>
+                    &middot;
+                    <a href="#!">Terms &amp; Conditions</a>
+
                 </div>
             </div>
         </div>
@@ -82,7 +80,15 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-<script src="{{route('homepage')}}/cihancalli/dist/js/scripts.js"></script>
-
+<script src="https://zerdasoftware.com/zerdasoftware/dist/js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        disable: 'mobile',
+        duration: 600,
+        once: true,
+    });
+</script>
 </body>
 </html>
